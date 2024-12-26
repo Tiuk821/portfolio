@@ -1,0 +1,274 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.right {
+    display: flex;
+    gap: 20px;
+}
+
+/* Tombol toggle (default: sembunyi) */
+.menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+.right
+{
+    display: flex;
+    padding-right: 50px;
+    gap: 20px;
+}
+
+.right a
+{
+    text-decoration: none;
+    color: black;
+    transition: background-color 0.2s;
+}
+
+.right a:hover
+{
+    color: #FAC67A;
+    transition: 0.2s;
+}
+
+.circle
+{
+    background-color: #FAC67A;
+    height: 25px;
+    width: 25px;
+    border-radius: 50px;
+}
+
+.left
+{
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    gap: 15px;
+}
+
+.left a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.hero
+{
+    display: flex;
+}
+
+.hero .txt
+{
+    padding-top: 200px;
+    padding-left: 20px;
+    font-size: 3rem;
+    width: 350px;
+}
+
+.txt h3
+{
+    padding-top: 20px;
+    font-size: 1.2rem;
+}
+
+.txt p
+{
+    padding-top: 10px;
+    font-size: 1rem;
+}
+
+.hero .img img
+{
+    width: 500px;
+    height: 500px;
+    border-radius: 2000px;
+    padding: 110px 0 0 110px;
+}
+
+.circles
+{
+    display: flex;
+    margin-top: -100px;
+    margin-left: 550px;
+}
+
+.circles div
+{
+    transition: background-color 0.2s;
+}
+
+.circles div:hover {
+    background-color: white; /* Efek hover untuk semua lingkaran */
+    transition: 0.2s;
+    
+}
+
+.circles .circle-resume
+{
+    background-color: #eba304;
+    border-radius: 150px;
+    width: 150px;
+    height: 150px;
+    font-size: 0.7rem;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    border: black solid 0.2px;
+
+}
+
+.circles .circle-resume:hover
+{
+    background-color: white;
+}
+
+.circles .circle-projects
+{
+    background-color: #f83c23;
+    border-radius: 150px;
+    width: 150px;
+    height: 150px;
+    font-size: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    border: black solid 0.2px;
+
+}
+
+.circles .circle-contact
+{
+    background-color: #84dbdb;
+    border-radius: 150px;
+    width: 150px;
+    height: 150px;
+    font-size: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 220px;
+    border: black solid 0.2px;
+
+}
+
+.circles .circle-contact:hover
+{
+    background-color: white;
+}
+
+.circles a
+{
+    text-decoration: none;
+    color: black;
+}
+
+@media(max-width: 750px)
+{
+    .img img
+    {
+        width: 10px;
+        height: 10px;
+        margin-left: -100px;
+    }
+
+    .navbar
+    {
+        padding: 0; /* Hilangkan padding bawaan */
+        margin: 0; /* Hilangkan margin bawaan */
+        width: 100%; /* Pastikan navbar menggunakan seluruh lebar */
+        box-sizing: border-box; /* Pastikan elemen mempertimbangkan padding/margin */
+    }
+
+    .hero
+    {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .txt
+    {
+        margin-top: -100px;
+        padding-left: 0;
+    }
+
+    .circles
+    {
+        display: flex;
+        margin-left: -0.5px;
+        margin-top: 20px;
+        margin-right: 0;
+        margin-bottom: 0;
+        justify-content: center;
+    }
+
+    .circles .circle-contact
+    {
+        margin-right: 0;
+    }
+
+    .circles .circle-contact, .circles .circle-resume, .circles .circle-projects
+    {
+        width: 90px;
+        height: 90px;
+    }
+
+    .circles .circle-contact h3, .circles .circle-resume h3, .circles .circle-projects h3
+    {
+        font-size: 1rem !important; 
+    }
+
+    .navbar-brand
+    {
+        margin: 0;
+    }
+
+    .footer
+    {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 0 auto;
+    }
+}
+
+.mg-education
+{
+    margin-top: 1000px;
+}
+
+.navbar-brand::after
+{
+    content: "Programmer";
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 0.5rem;
+}
+
+.icon
+{
+    color: black;
+}
+

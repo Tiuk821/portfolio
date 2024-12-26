@@ -1,0 +1,399 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.right {
+    display: flex;
+    gap: 20px;
+}
+
+/* Tombol toggle (default: sembunyi) */
+.menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Navbar menjadi vertikal */
+        align-items: flex-start;
+    }
+
+    .menu-toggle {
+        display: block; /* Tampilkan tombol menu toggle */
+    }
+
+    .right {
+        flex-direction: column;
+        width: 100%;
+        display: none; /* Default sembunyikan menu */
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .right a {
+        text-align: left;
+        padding: 10px 0;
+        border-bottom: 1px solid #ddd;
+        width: 100%;
+    }
+
+    /* Menu muncul ketika toggle aktif */
+    .right.show {
+        display: flex;
+    }
+}
+
+
+.right
+{
+    display: flex;
+    padding-right: 50px;
+    gap: 20px;
+}
+
+.right a
+{
+    text-decoration: none;
+    color: black;
+    transition: background-color 0.2s;
+}
+
+.right a:hover
+{
+    color: #FAC67A;
+    transition: 0.2s;
+}
+
+.circle
+{
+    background-color: #FAC67A;
+    height: 25px;
+    width: 25px;
+    border-radius: 50px;
+}
+
+.left
+{
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    gap: 15px;
+}
+
+.left a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.hero
+{
+    margin-left: 200px;
+    margin-top: 80px;
+    display: flex;
+}
+
+.hero h1
+{
+    font-size: 2.2rem;
+}
+
+.hero h2
+{
+    margin-top: 50px;
+}
+
+.isi
+{
+    margin-top: 100px;
+    margin-left: -300px;
+}
+
+.mg-isi
+{
+    margin-top: 40px;
+}
+
+.edu
+{
+    padding-top: 550px;
+}
+
+.sma
+{
+    margin-top: 80px;
+}
+
+.kemampuan
+{
+    display: flex;
+}
+
+.kemampuan h2
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+.navbar-brand::after
+{
+    content: "Programmer";
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 0.5rem;
+}
+
+.box
+{
+    position: relative;
+    max-width: 450px;
+    width: 100%;
+    background: white;
+    margin: 0 15px;
+    padding: 10px 20px;
+    border-radius: 7px;
+    overflow: visible;
+}
+
+.box .skill-box-ind
+{
+    width: 100%;
+    margin: 0 25px;
+}
+
+.box .skill-box-eng
+{
+    width: 100%;
+    margin: 0 25px;
+}
+
+.titles
+{
+    display: flex;
+}
+
+.persen-ind
+{
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+
+.persen-eng
+{
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+
+.skill-box-ind .title-ind
+{
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+
+.skill-box-eng .title-eng
+{
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+
+.skill-box-ind .skill-bar-ind
+{
+    height: 8px;
+    width: 50%;
+    border-radius: 6px;
+    margin-top: 6px;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.skill-box-eng .skill-bar-eng
+{
+    height: 8px;
+    width: 50%;
+    border-radius: 6px;
+    margin-top: 6px;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.skill-bar-ind .skill-per-ind
+{
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+    background: #4070f4;
+}
+
+
+.skill-bar-eng .skill-per-eng
+{
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 65%;
+    border-radius: 6px;
+    background: #4070f4;
+}
+
+.skill-per-ind .tooltip-ind
+{
+    position: absolute;
+    right: -14px;
+    top: -28px;
+    font-size: 9px;
+    font-weight: 500;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 3px;
+    background: #4070f4;
+}
+
+.skill-per-eng .tooltip-eng
+{
+    position: absolute;
+    right: -14px;
+    top: -28px;
+    font-size: 9px;
+    font-weight: 500;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 3px;
+    background: #4070f4;
+}
+
+/* Expertise */
+.expertise ul li
+{
+    margin-left: 100px;
+}
+
+.course
+{
+    margin-left: 100px;
+}
+
+@media(max-width: 750px)
+{
+    .kemampuan .col h2
+    {
+        font-size: 1rem;
+    }
+
+    .skill-box-ind .title-ind
+    {
+        font-size: 0.6rem;
+    }
+
+    .skill-box-eng .title-eng
+    {
+        font-size: 0.6rem;
+    }
+
+    .skill-bar-eng .skill-per-eng
+    {   
+        position: relative;
+        display: block;
+        height: 100%;
+        width: 165%;
+        border-radius: 6px;
+        background: #4070f4;
+    }
+
+    .skill-bar-ind .skill-per-ind
+    {
+        position: relative;
+        display: block;
+        height: 100%;
+        width: 200%;
+        border-radius: 6px;
+        background: #4070f4;
+    }
+
+    .skill-box-ind .skill-bar-ind
+    {
+        height: 2px;
+        width: 50%;
+        border-radius: 6px;
+        margin-top: 6px;
+        background: rgba(0, 0, 0, 0.1);
+    }
+
+    .skill-box-eng .skill-bar-eng
+    {
+        height: 2px;
+        width: 50%;
+        border-radius: 6px;
+        margin-top: 6px;
+        background: rgba(0, 0, 0, 0.1);
+    }
+    
+    .box
+    {
+        margin-left: -25px;
+    }
+
+    .expertise ul li
+    {
+        font-size: 0.6rem;
+        margin-left: -5px;
+    }
+
+    .course h4, .course p
+    {
+        font-size: 0.5rem;
+        margin-left: -70px;
+    }
+
+    .skill-per-ind .tooltip-ind, .skill-per-eng .tooltip-eng
+    {
+        font-size: 5px;
+        top: -20px;
+
+    }
+
+    .footer
+    {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 0 auto;
+    }
+
+}
+
+.certi img
+{
+    width: 45%;
+}
+
+.icon
+{
+    color: black;
+}
